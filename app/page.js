@@ -50,7 +50,7 @@ export default function Home() {
         muted
         className="absolute top-1/2 left-1/2 w-full h-full object-cover transform -translate-x-1/2 -translate-y-1/2"
       >
-        <source src="https://www.youtube.com/embed/dSxCd373bAc?si=ZMdq5--zeyL_uVgA" type="video/mp4" />
+        <source src="./adn.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       <div className="relative z-10 flex justify-center items-center h-full text-white">
