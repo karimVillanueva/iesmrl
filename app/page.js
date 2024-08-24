@@ -2,14 +2,14 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import BackgroundVideo from 'next-video/background-video';
-import adnVideo from '/videos/adn-repair.mp4';
+import adnVideo from '/videos/adn.mp4';
+import logo from '../public/logo oscuro.jpg'
 // 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => {
     setIsOpen(!isOpen);    
   }
-  
   return (
     <>
     <header className="bg-[#bca61c] p-4 ">
@@ -17,7 +17,7 @@ export default function Home() {
             {/* Logo */}
             <div className="text-white text-xl font-bold">
               <Link href="/">
-                Logo
+                <img src={logo.src} alt="Logo" className="h-8" /> {/* Ajusta la altura según sea necesario */}
               </Link>
             </div>
 
@@ -46,25 +46,19 @@ export default function Home() {
           </div>
     </header>
 
-    <div className="relative h-screen w-screen overflow-hidden">
+    <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
       <BackgroundVideo src={adnVideo}>
-        
-        Your browser does not support the video tag.
+      <h1>next-video</h1>
+        <p>
+          A React component for adding video to your Next.js application.
+          It extends both the video element and your Next app with features
+          for automatic video optimization.
+        </p>
       </BackgroundVideo>
-      <div className="relative z-10 flex justify-center items-center h-full text-white">
-        {/* Aquí puedes poner el contenido que quieras mostrar encima del video */}
-        <h1 className="text-4xl md:text-6xl font-bold">Tu contenido aquí</h1>
-      </div>
     </div>
-
-
-
-
-
-
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+   <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        
+      Here goes the principal content        
       </div>
 
       <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
