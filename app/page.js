@@ -1,14 +1,15 @@
 'use client';
 import { useState } from 'react';
 import Link from 'next/link';
-import Video from 'next-video';
-import adn from '/videos/adn.mp4';
-
+import BackgroundVideo from 'next-video/background-video';
+import adnVideo from '/videos/adn-repair.mp4';
+// 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => {
-    setIsOpen(!isOpen);
+    setIsOpen(!isOpen);    
   }
+  
   return (
     <>
     <header className="bg-[#bca61c] p-4 ">
@@ -46,15 +47,10 @@ export default function Home() {
     </header>
 
     <div className="relative h-screen w-screen overflow-hidden">
-      <Video
-        autoPlay
-        loop
-        muted
-        className="absolute top-1/2 left-1/2 w-full h-full object-cover transform -translate-x-1/2 -translate-y-1/2"
-      >
-        <source src={adn} type="video/mp4" />
+      <BackgroundVideo src={adnVideo}>
+        
         Your browser does not support the video tag.
-      </Video>
+      </BackgroundVideo>
       <div className="relative z-10 flex justify-center items-center h-full text-white">
         {/* Aquí puedes poner el contenido que quieras mostrar encima del video */}
         <h1 className="text-4xl md:text-6xl font-bold">Tu contenido aquí</h1>
