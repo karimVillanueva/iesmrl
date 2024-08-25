@@ -20,11 +20,7 @@ export default function Home() {
       rel="noopener noreferrer"
       className="fixed bottom-4 right-4 z-50 transition-transform duration-300 transform hover:scale-110"
     >
-      <img
-        src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
-        alt="WhatsApp"
-        className="w-16 h-16"
-      />
+     
     </a>
     <header className="bg-[#bca61c] p-4 ">
           <div className="container mx-auto flex justify-between items-center">
