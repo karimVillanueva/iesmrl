@@ -4,8 +4,7 @@ import Link from 'next/link';
 import BackgroundVideo from 'next-video/background-video';
 import adnVideo from '/videos/adn.mp4';
 import logo from '../public/logo oscuro.jpg'
-
-import Video from 'next-video';
+import Image from 'next/image'
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
