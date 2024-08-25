@@ -3,8 +3,10 @@ import { useState } from 'react';
 import Link from 'next/link';
 import BackgroundVideo from 'next-video/background-video';
 import adnVideo from '/videos/adn.mp4';
-import logo from '../public/logo oscuro.jpg'
+import logo from '../public/logo_oscuro_no_bg.svg'
 import Image from 'next/image'
+import { FaWhatsapp } from 'react-icons/fa6'
+
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,27 +15,20 @@ export default function Home() {
   }
   return (
     <>
-      <a
+    <a
       href="https://wa.me/+525562109769" // Reemplaza con tu número
       target="_blank"
       rel="noopener noreferrer"
       className="fixed bottom-4 right-4 z-50 transition-transform duration-300 transform hover:scale-110"
     >
-      <Image
-        src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
-        alt="WhatsApp"
-        className="w-16 h-16"
-      />
+       <FaWhatsapp color='white' className='w-7 h-7 md:w-10 md:h-10' />
     </a>
-    <header className="bg-[#bca61c] p-4 ">
-          <div className="container mx-auto flex justify-between items-center">
-            {/* Logo */}
-            <div className="text-white text-xl font-bold ">
-              <Link href="/">
-                <Image src={logo.src} alt="Logo" className="h-8" /> {/* Ajusta la altura según sea necesario */}
-              </Link>
+    <header className="bg-[#bca61c] p-4 opacity-70">
+          <div className="container mx-auto flex justify-between items-center">           
+            <div className="container mx-auto flex justify-between items-center">
+              INSTITUTO DE ESTUDIO SUPERIORES EN MEDICINA REGENERATIVA Y LONGEVIDAD 
             </div>
-
+            
             {/* Nav Links */}
             <nav className="hidden md:flex space-x-6">
               <Link href="/" className="text-white hover:text-blue-300">Nosotros</Link>
@@ -60,15 +55,21 @@ export default function Home() {
     </header>
 
     <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-      <BackgroundVideo src={adnVideo} >
-        <h1 className="bg-black opacity-70 mix-blend-multiply font-bold text-center text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl">IESMERL
-          </h1> 
-      </BackgroundVideo>
+    <BackgroundVideo src={adnVideo} >    
+      <div className="bg-black opacity-70 mix-blend-multiply font-bold text-center text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl">
+      <Link href="/">
+        <Image src={logo} alt="Logo"  />
+          {/* Ajusta la altura según sea necesario */}
+      </Link>
+      </div> 
+      
+     </BackgroundVideo>
     </div>
    <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
+      <h1>
       <q> Transforma tu futuro con la última vanguardia en medicina regenerativa y longevidad. Ofrecemos una formación integral y avanzada para profesionales apasionados por innovar en el campo de la salud y el bienestar. Conviértete en un líder en el avance de tratamientos que potencian la calidad de vida y promueven una vida más larga y saludable.</q>
-     
+      </h1>
       </div>
       <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
         <a
