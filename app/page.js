@@ -4,7 +4,9 @@ import Link from 'next/link';
 import BackgroundVideo from 'next-video/background-video';
 import adnVideo from '/videos/adn.mp4';
 import logo from '../public/logo oscuro.jpg'
-// 
+
+import Video from 'next-video';
+
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => {
@@ -12,10 +14,22 @@ export default function Home() {
   }
   return (
     <>
+      <a
+      href="https://wa.me/+525562109769" // Reemplaza con tu número
+      target="_blank"
+      rel="noopener noreferrer"
+      className="fixed bottom-4 right-4 z-50 transition-transform duration-300 transform hover:scale-110"
+    >
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+        alt="WhatsApp"
+        className="w-16 h-16"
+      />
+    </a>
     <header className="bg-[#bca61c] p-4 ">
           <div className="container mx-auto flex justify-between items-center">
             {/* Logo */}
-            <div className="text-white text-xl font-bold">
+            <div className="text-white text-xl font-bold ">
               <Link href="/">
                 <img src={logo.src} alt="Logo" className="h-8" /> {/* Ajusta la altura según sea necesario */}
               </Link>
@@ -23,8 +37,8 @@ export default function Home() {
 
             {/* Nav Links */}
             <nav className="hidden md:flex space-x-6">
-              <Link href="/" className="text-white hover:text-blue-300">Inicio</Link>
-              <Link href="/services" className="text-white hover:text-blue-300">Servicios</Link>
+              <Link href="/" className="text-white hover:text-blue-300">Nosotros</Link>
+              <Link href="/services" className="text-white hover:text-blue-300">Diplomados</Link>
               <Link href="/contact" className="text-white hover:text-blue-300">Contacto</Link>
             </nav>
 
@@ -47,20 +61,15 @@ export default function Home() {
     </header>
 
     <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-      <BackgroundVideo src={adnVideo}>
-      <h1>next-video</h1>
-        <p>
-          A React component for adding video to your Next.js application.
-          It extends both the video element and your Next app with features
-          for automatic video optimization.
-        </p>
+      <BackgroundVideo src={adnVideo} >
+        <h1 className="bg-black opacity-70 mix-blend-multiply font-bold text-center text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl">IESMERL
+          </h1> 
       </BackgroundVideo>
     </div>
    <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-      Here goes the principal content        
+      "Transforma tu futuro con la última vanguardia en medicina regenerativa y longevidad. Ofrecemos una formación integral y avanzada para profesionales apasionados por innovar en el campo de la salud y el bienestar. Conviértete en un líder en el avance de tratamientos que potencian la calidad de vida y promueven una vida más larga y saludable." 
       </div>
-
       <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
         <a
           href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
@@ -69,13 +78,13 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
+            Diplomados{" "}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span>
           </h2>
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
+          Descubre nuestros cursos avanzados en medicina regenerativa y longevidad, y da el siguiente paso en tu carrera profesional con formación de vanguardia.
           </p>
         </a>
 
@@ -86,13 +95,13 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
+            Docentes{" "}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span>
           </h2>
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
+          Conoce a nuestros expertos docentes y descubre la excelencia en educación que impulsa el futuro de la medicina regenerativa y longevidad.
           </p>
         </a>
 
@@ -103,13 +112,13 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
+            Intalaciones{" "}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span>
           </h2>
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
+          Explora nuestras modernas instalaciones y descubre el entorno donde la innovación en medicina regenerativa cobra vida.
           </p>
         </a>
 
@@ -120,13 +129,13 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
+            Calendario{" "}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span>
           </h2>
           <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
+          Accede a nuestro calendario de diplomados y organiza tu formación para dominar las últimas innovaciones en medicina regenerativa y longevidad.
           </p>
         </a>
       </div>
