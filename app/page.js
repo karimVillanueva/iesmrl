@@ -20,14 +20,18 @@ export default function Home() {
       rel="noopener noreferrer"
       className="fixed bottom-4 right-4 z-50 transition-transform duration-300 transform hover:scale-110"
     >
-     
+      <Image
+        src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+        alt="WhatsApp"
+        className="w-16 h-16"
+      />
     </a>
     <header className="bg-[#bca61c] p-4 ">
           <div className="container mx-auto flex justify-between items-center">
             {/* Logo */}
             <div className="text-white text-xl font-bold ">
               <Link href="/">
-                <img src={logo.src} alt="Logo" className="h-8" /> {/* Ajusta la altura según sea necesario */}
+                <Image src={logo.src} alt="Logo" className="h-8" /> {/* Ajusta la altura según sea necesario */}
               </Link>
             </div>
 
