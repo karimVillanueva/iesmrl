@@ -8,17 +8,17 @@ import Image from 'next/image'
 const courses = [
   {
     id: 1,
-    title: "Curso de JavaScript",
+    title: "Diplomado en MEDICINA REGENERATIVA, ESTÉTICA REGENERATIVA Y LONGEVIDAD.",
     image: "https://via.placeholder.com/300",
-    description: "Aprende los fundamentos de JavaScript, el lenguaje de la web.",
-    syllabus: "1. Introducción a JavaScript\n2. Sintaxis y Operadores\n3. Funciones y Objetos\n4. DOM y Eventos\n5. ES6 y Más Allá"
+    description: "Este diplomado está dirigido a profesionales de la salud que estén interesados a obtener conocimientos prácticos en el ámbito de la medicina regenerativa, estética regenerativa, longevidad, nutrición y psicología en el contexto de la obesidad.",
+    syllabus: "1. Introducción a la MEDICINA REGENERATIVA, MEDICINA ESTETICA- REGENERATIVA YLONGEVIDAD SALUDABLE\n2. ESTÉTICA : TOXINA BOTULINICA TIPO A Y PEELING \n3. MEDICINA REGENERATIVA: Bioquímica funcional con micronutrientes , vitaminas, minerales y aminoácidos,funcional y regenerativa, SUEROTERAPIA FUNCIONAL Y REGENERATIVA\n4. LONGEVIDAD SALUDABLE: NUTRICION BÁSICA y clínica aplicada en el contexto de la longevidad saludable\n5.Medicina integrativa como apoyo a la estética y medicina regenerativa\n 6. MEDICINA REGENERATIVA Y ESTÉTICA REGENERATIVA: PLASMA RICO EN PLAQUETAS\n 7.Longevidad saludable, SALUD MENTAL \n 8. MEDICINA REGENERATIVA y ESTÉTICA REGENERATIVA: OZONOTERAPIA \n 9. Medicina REGENERATIVA: TERAPIA NEURAL \n 10. ESTÉTICA REGENERATIVA\n 11. MEDICINA REGENERATIVA Y ESTETICA REGENERATIVA"
   },
   {
     id: 2,
-    title: "Curso de React",
+    title: "Diplomado en manejo integral de las adicciones",
     image: "https://via.placeholder.com/300",
-    description: "Construye interfaces de usuario con React.",
-    syllabus: "1. Introducción a React\n2. Componentes y Props\n3. Estado y Ciclo de Vida\n4. Hooks\n5. Gestión del Estado con Redux"
+    description: "Este diplomado está dirigido a profesionales de la salud que estén interesados a obtener conocimientos prácticos en el ámbito de la medicina regenerativa, estética regenerativa, longevidad, nutrición y psicología en el contexto de la obesidad.",
+    syllabus: "1. Introducción a las adicciones\n2. MODELOS TEORICOS EN PSICOTERAPIA , TCC, T SISTEMICO FAMILIAR, TERAPIAS HUMANISTAS, PSIOANALISIS, TERAPIAS BREVES\n3. MEDICINA REGENERATIVA: Bioquímica funcional con micronutrientes\n4. Manejo básico nutricional en el contexto de las adicciones, nutrición clínica \n5. Manejo integral en alteraciones bucales, ATM,BRUXISMO, y terapia neural para nsiedad, bruxismo y ATM en el contexto de las adicciones, ozonoterapia para el uso en patología dental por uso de metanfetaminas, tabaco, etc\n 6.Farmacología de las adicciones\n 7. SALUD MENTAL\n 8. co-dependencia y co-adicto \n 9. Medicina integrativa\n 10. Epigenética\n 11. Medicina INTEGRATIVA II"
   },
   {
     id: 3,
@@ -88,18 +88,18 @@ export default function Diplomados() {
   };
 
    // Estado para el texto del párrafo
-   const [text, setText] = useState('Este es el primer texto.');
+   const [text, setText] = useState('Queremos darte un recorrido por nuestros diplomados.');
    const [isPaused, setIsPaused] = useState(false);
-   const [speed, setSpeed] = useState(3000); // Velocidad inicial de 3 segundos
+   const [speed, setSpeed] = useState(4000); // Velocidad inicial de 3 segundos
    const intervalRef = useRef(null);
  
    // Lista de textos que se mostrarán en el párrafo
    const texts = [
-     'Este es el primer texto.',
-     'Este es el segundo texto.',
-     'Este es el tercer texto.',
-     'Este es el cuarto texto.',
-     'Este es el quinto texto.',
+     'El Diplomado en MEDICINA REGENERATIVA, ESTÉTICA REGENERATIVA Y LONGEVIDAD. \n Este diplomado está dirigido a profesionales de la salud que estén interesados a obtener conocimientos prácticos en el ámbito de la medicina regenerativa, estética regenerativa, longevidad, nutrición y psicología en el contexto de la obesidad.',
+     'Tenemos un enfoque integral, el curso de psicología es el mejor.',
+     'Ayuda a tus pacientes a tener una larga vida longeva.',
+     'El curso de tabaquismo te enseña a fumar, fumas o fumas.',
+     'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe error nulla doloribus neque repellat, omnis, facilis iusto dolor culpa excepturi natus architecto. Eum repellendus repudiandae voluptas nesciunt, eaque vel consectetur!',
    ];
  
    useEffect(() => {
@@ -176,7 +176,7 @@ export default function Diplomados() {
         {courses.map((course) => (
           <div
             key={course.id}
-            className="min-w-[300px] bg-white shadow-md rounded-md cursor-pointer transform hover:scale-105 transition-transform duration-200"
+            className="min-w-[300px] bg-gray-300 shadow-md rounded-md cursor-pointer transform hover:scale-105 transition-transform duration-200"
             onClick={() => openPopup(course)}
           >
             <Image
@@ -222,7 +222,7 @@ export default function Diplomados() {
 
     {/* Texto cambiante */} 
     <div className="flex flex-col items-center justify-center  bg-black-100 space-y-4">
-      <div className="bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg p-6 rounded-lg shadow-lg max-w-md">
+      <div className="bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg p-6 rounded-lg shadow-lg max-w-md ">
         <p className="text-white text-lg font-medium">{text}</p>
       </div>
     </div>

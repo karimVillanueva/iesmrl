@@ -23,9 +23,10 @@ export default function Home() {
     >
        <FaWhatsapp color='white' className='w-7 h-7 md:w-10 md:h-10' />
     </a>
-    <div className='p-4'>
-    <header className="bg-[#bca61c] p-4 bg-opacity-40">
-          <div className="bg-[#eeebd4] container mx-auto flex justify-between items-center h-auto bg-white bg-opacity-80 backdrop-blur-md border border-white/20 rounded-lg p-6">
+    <div className='p-4 font-bold text-center'>
+      <h1>Instituto de Estudios Superiores en Medicina Regenerativa y Longevidad</h1>
+    <header className=" p-4 border border-white/20 rounded-lg bg-opacity-40">
+          <div className=" container mx-auto flex justify-between items-center h-auto bg-white bg-opacity-80 backdrop-blur-md border border-white/20 rounded-lg ">
           <BackgroundVideo src={adnVideo}  className="rounded" >
               {/* Logo */}
               <div className="text-white text-xl font-bold ">
