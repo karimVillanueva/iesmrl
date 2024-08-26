@@ -124,11 +124,11 @@ export default function Diplomados() {
    }, [isPaused, speed]); 
 
   return (
-    <div className="dark:bg-gray-800">
+    <div className="bg-white dark:bg-gray-800">
   <header className="bg-[#bca61c] dark:bg-gray-900 p-4">
     <div className="container mx-auto flex justify-between items-center">
       {/* Logo */}
-      <div className="text-white text-xl font-bold">
+      <div className="text-black dark:text-white text-xl font-bold"> {/* Modo claro por defecto: text-black */}
         <Link href="/">
           <Image src={logo} alt="Logo" className="h-8" /> {/* Ajusta la altura según sea necesario */}
         </Link>
@@ -136,14 +136,16 @@ export default function Diplomados() {
 
       {/* Nav Links */}
       <nav className="hidden md:flex space-x-6">
-        <Link href="/" className="text-white hover:text-blue-300 dark:hover:text-yellow-400">Nosotros</Link>
-        <Link href="/services" className="text-white hover:text-blue-300 dark:hover:text-yellow-400">Diplomados</Link>
-        <Link href="/contact" className="text-white hover:text-blue-300 dark:hover:text-yellow-400">Contacto</Link>
+        {/* Modo claro por defecto: text-black */}
+        <Link href="/" className="text-black hover:text-blue-600 dark:text-white dark:hover:text-yellow-400">Nosotros</Link>
+        <Link href="/services" className="text-black hover:text-blue-600 dark:text-white dark:hover:text-yellow-400">Diplomados</Link>
+        <Link href="/contact" className="text-black hover:text-blue-600 dark:text-white dark:hover:text-yellow-400">Contacto</Link>
       </nav>
 
       {/* Hamburger Icon */}
       <div className="md:hidden">
-        <button onClick={toggleMenu} className="text-white dark:text-gray-300 focus:outline-none">
+        {/* Modo claro por defecto: text-black */}
+        <button onClick={toggleMenu} className="text-black dark:text-white focus:outline-none">
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
           </svg>
@@ -153,8 +155,9 @@ export default function Diplomados() {
 
     {/* Mobile Menu */}
     <div className={`md:hidden mt-4 ${isOpen ? 'block' : 'hidden'}`}>
-      <Link href="/" className="block text-white dark:text-gray-300 hover:text-blue-300 dark:hover:text-yellow-400 mb-2">Inicio</Link>
-      <Link href="/services" className="block text-white dark:text-gray-300 hover:text-blue-300 dark:hover:text-yellow-400 mb-2">Servicios</Link>
+      {/* Modo claro por defecto: text-black */}
+      <Link href="/" className="block text-black dark:text-white hover:text-blue-600 dark:hover:text-yellow-400 mb-2">Inicio</Link>
+      <Link href="/services" className="block text-black dark:text-white hover:text-blue-600 dark:hover:text-yellow-400 mb-2">Servicios</Link>
     </div>
   </header>
 
@@ -175,7 +178,7 @@ export default function Diplomados() {
       {courses.map((course) => (
         <div
           key={course.id}
-          className="min-w-[250px] md:min-w-[300px] lg:min-w-[400px] bg-gray-300 dark:bg-gray-700 shadow-md rounded-md cursor-pointer transform hover:scale-105 transition-transform duration-200"
+          className="min-w-[250px] md:min-w-[300px] lg:min-w-[400px] bg-white dark:bg-gray-700 shadow-md rounded-md cursor-pointer transform hover:scale-105 transition-transform duration-200"
           onClick={() => openPopup(course)}
         >
           <Image
@@ -186,7 +189,8 @@ export default function Diplomados() {
             width={300}
           />
           <div className="p-4">
-            <h3 className="text-lg font-bold text-gray-700 dark:text-gray-200">{course.title}</h3>
+            {/* Modo claro por defecto: text-black */}
+            <h3 className="text-lg font-bold text-black dark:text-white">{course.title}</h3>
             <p className="text-sm text-gray-700 dark:text-gray-300">{course.description}</p>
           </div>
         </div>
@@ -211,7 +215,7 @@ export default function Diplomados() {
           >
             &times;
           </button>
-          <h2 className="text-2xl font-bold mb-4 text-gray-700 dark:text-white">{selectedCourse.title}</h2>
+          <h2 className="text-2xl font-bold mb-4 text-black dark:text-white">{selectedCourse.title}</h2>
           <h3 className="text-lg font-semibold text-gray-700 dark:text-gray-200">Temario:</h3>
           <pre className="whitespace-pre-wrap text-sm text-gray-700 dark:text-gray-300">{selectedCourse.syllabus}</pre>
         </div>
@@ -220,12 +224,14 @@ export default function Diplomados() {
   </div>
 
   {/* Texto cambiante */}
-  <div className="flex flex-col items-center justify-center bg-black-100 dark:bg-gray-900 space-y-4">
+  <div className="flex flex-col items-center justify-center bg-white dark:bg-gray-900 space-y-4">
     <div className="bg-white dark:bg-gray-800 bg-opacity-20 dark:bg-opacity-40 backdrop-filter backdrop-blur-lg p-6 rounded-lg shadow-lg max-w-md">
-      <p className="text-white dark:text-gray-300 text-lg font-medium">{text}</p>
+      {/* Modo claro por defecto: text-black */}
+      <p className="text-black dark:text-gray-300 text-lg font-medium">{text}</p>
     </div>
   </div>
 </div>
+
 
   
   );
