@@ -124,7 +124,7 @@ export default function Diplomados() {
    }, [isPaused, speed]); 
 
   return (
-    <div>
+    <div className='container'>
     <header className="bg-[#bca61c] p-4">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
