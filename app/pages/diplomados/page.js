@@ -124,41 +124,40 @@ export default function Diplomados() {
    }, [isPaused, speed]); 
 
   return (
-  <div >
-    <header className="bg-[#bca61c] p-4 ">
-          <div className="container mx-auto flex justify-between items-center">
-            {/* Logo */}
-            <div className="text-white text-xl font-bold ">
-              <Link href="/">
-                <Image src={logo} alt="Logo" className="h-8" /> {/* Ajusta la altura según sea necesario */}
-              </Link>
-            </div>
-
-            {/* Nav Links */}
-            <nav className="hidden md:flex space-x-6">
-              <Link href="/" className="text-white hover:text-blue-300">Nosotros</Link>
-              <Link href="/services" className="text-white hover:text-blue-300">Diplomados</Link>
-              <Link href="/contact" className="text-white hover:text-blue-300">Contacto</Link>
-            </nav>
-
-            {/* Hamburger Icon */}
-            <div className="md:hidden">
-              <button onClick={toggleMenu} className="text-white focus:outline-none">
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-                </svg>
-              </button>
-            </div>
-          </div>
-
-          {/* Mobile Menu */}
-          <div className={`md:hidden mt-4 ${isOpen ? 'block' : 'hidden'}`}>
-            <Link href="/" className="block text-white hover:text-blue-300 mb-2">Inicio</Link>
-            <Link href="/services" className="block text-white hover:text-blue-300 mb-2">Servicios</Link>
-            <Link href="/contact" className="block text-white hover:text-blue-300">Contacto</Link>
-          </div>
+    <div>
+    <header className="bg-[#bca61c] p-4">
+      <div className="container mx-auto flex justify-between items-center">
+        {/* Logo */}
+        <div className="text-white text-xl font-bold">
+          <Link href="/">
+            <Image src={logo} alt="Logo" className="h-8" /> {/* Ajusta la altura según sea necesario */}
+          </Link>
+        </div>
+  
+        {/* Nav Links */}
+        <nav className="hidden md:flex space-x-6">
+          <Link href="/" className="text-white hover:text-blue-300">Nosotros</Link>
+          <Link href="/services" className="text-white hover:text-blue-300">Diplomados</Link>
+          <Link href="/contact" className="text-white hover:text-blue-300">Contacto</Link>
+        </nav>
+  
+        {/* Hamburger Icon */}
+        <div className="md:hidden">
+          <button onClick={toggleMenu} className="text-white focus:outline-none">
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+  
+      {/* Mobile Menu */}
+      <div className={`md:hidden mt-4 ${isOpen ? 'block' : 'hidden'}`}>
+        <Link href="/" className="block text-white hover:text-blue-300 mb-2">Inicio</Link>
+        <Link href="/services" className="block text-white hover:text-blue-300 mb-2">Servicios</Link>
+      </div>
     </header>
-
+  
     <div className="relative">
       {/* Botón de desplazamiento a la izquierda */}
       <button
@@ -167,7 +166,7 @@ export default function Diplomados() {
       >
         &#8249;
       </button>
-
+  
       {/* Carrusel de cursos */}
       <div
         ref={carouselRef}
@@ -176,13 +175,13 @@ export default function Diplomados() {
         {courses.map((course) => (
           <div
             key={course.id}
-            className="min-w-[300px] bg-gray-300 shadow-md rounded-md cursor-pointer transform hover:scale-105 transition-transform duration-200"
+            className="min-w-[250px] md:min-w-[300px] lg:min-w-[400px] bg-gray-300 shadow-md rounded-md cursor-pointer transform hover:scale-105 transition-transform duration-200"
             onClick={() => openPopup(course)}
           >
             <Image
               src={logo}
               alt={course.title}
-              className="w-full h-48 object-cover rounded-t-md"
+              className="w-full h-32 md:h-48 object-cover rounded-t-md"
               height={300}
               width={300}
             />
@@ -193,7 +192,7 @@ export default function Diplomados() {
           </div>
         ))}
       </div>
-
+  
       {/* Botón de desplazamiento a la derecha */}
       <button
         className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white text-black rounded-full p-2 shadow-md z-10"
@@ -201,7 +200,7 @@ export default function Diplomados() {
       >
         &#8250;
       </button>
-
+  
       {/* Popup del temario */}
       {selectedCourse && (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
@@ -217,17 +216,17 @@ export default function Diplomados() {
             <pre className="whitespace-pre-wrap text-sm text-gray-700">{selectedCourse.syllabus}</pre>
           </div>
         </div>
-      )}      
+      )}
     </div>
-
-    {/* Texto cambiante */} 
-    <div className="flex flex-col items-center justify-center  bg-black-100 space-y-4">
-      <div className="bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg p-6 rounded-lg shadow-lg max-w-md ">
+  
+    {/* Texto cambiante */}
+    <div className="flex flex-col items-center justify-center bg-black-100 space-y-4">
+      <div className="bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg p-6 rounded-lg shadow-lg max-w-md">
         <p className="text-white text-lg font-medium">{text}</p>
       </div>
     </div>
-
   </div>
+  
   );
 };
 

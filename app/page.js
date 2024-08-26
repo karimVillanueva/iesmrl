@@ -41,7 +41,6 @@ export default function Home() {
             <nav className="hidden md:flex space-x-6 ">
               <Link href="/" className="text-black hover:text-blue-300">Nosotros</Link>
               <Link href="/services" className="text-black hover:text-blue-300">Diplomados</Link>
-              <Link href="/contact" className="text-black hover:text-blue-300">Contacto</Link>
             </nav>
           
 
@@ -59,7 +58,6 @@ export default function Home() {
           <div className={`md:hidden mt-4 ${isOpen ? 'block' : 'hidden'}`}>
             <Link href="/" className="block text-black hover:text-blue-300 font-bold mb-2">Inicio</Link>
             <Link href="/services" className="block text-black hover:text-blue-300 font-bold mb-2">Servicios</Link>
-            <Link href="/contact" className="block text-black hover:text-blue-300 font-bold">Contacto</Link>
           </div>
     </header>
 
