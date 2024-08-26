@@ -52,7 +52,7 @@ const courses = [
 ];
 
 
-export default function() {
+export default function Diplomados() {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => {
     setIsOpen(!isOpen);    
