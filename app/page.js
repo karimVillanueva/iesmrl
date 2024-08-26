@@ -23,21 +23,26 @@ export default function Home() {
     >
        <FaWhatsapp color='white' className='w-7 h-7 md:w-10 md:h-10' />
     </a>
-    <header className="bg-[#bca61c] p-4 ">
-          <div className="container mx-auto flex justify-between items-center">
-            {/* Logo */}
-            <div className="text-white text-xl font-bold ">
+    <div className='p-4'>
+    <header className="bg-[#bca61c] p-4 bg-opacity-40">
+          <div className="bg-[#eeebd4] container mx-auto flex justify-between items-center h-auto bg-white bg-opacity-80 backdrop-blur-md border border-white/20 rounded-lg p-6">
+          <BackgroundVideo src={adnVideo}  className="rounded" >
+              {/* Logo */}
+              <div className="text-white text-xl font-bold ">
               <Link href="/">
-                <Image src={logo} alt="Logo" className="h-8" /> {/* Ajusta la altura según sea necesario */}
+                <Image src={logo} alt="Logo" h-auto/> {/* Ajusta la altura según sea necesario */}
               </Link>
             </div>
-
+          </BackgroundVideo>
+          
+            
             {/* Nav Links */}
-            <nav className="hidden md:flex space-x-6">
-              <Link href="/" className="text-white hover:text-blue-300">Nosotros</Link>
-              <Link href="/services" className="text-white hover:text-blue-300">Diplomados</Link>
-              <Link href="/contact" className="text-white hover:text-blue-300">Contacto</Link>
+            <nav className="hidden md:flex space-x-6 ">
+              <Link href="/" className="text-black hover:text-blue-300">Nosotros</Link>
+              <Link href="/services" className="text-black hover:text-blue-300">Diplomados</Link>
+              <Link href="/contact" className="text-black hover:text-blue-300">Contacto</Link>
             </nav>
+          
 
             {/* Hamburger Icon */}
             <div className="md:hidden">
@@ -51,28 +56,22 @@ export default function Home() {
 
           {/* Mobile Menu */}
           <div className={`md:hidden mt-4 ${isOpen ? 'block' : 'hidden'}`}>
-            <Link href="/" className="block text-white hover:text-blue-300 mb-2">Inicio</Link>
-            <Link href="/services" className="block text-white hover:text-blue-300 mb-2">Servicios</Link>
-            <Link href="/contact" className="block text-white hover:text-blue-300">Contacto</Link>
+            <Link href="/" className="block text-black hover:text-blue-300 font-bold mb-2">Inicio</Link>
+            <Link href="/services" className="block text-black hover:text-blue-300 font-bold mb-2">Servicios</Link>
+            <Link href="/contact" className="block text-black hover:text-blue-300 font-bold">Contacto</Link>
           </div>
     </header>
 
-    <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-      <BackgroundVideo src={adnVideo} >
-        <div className="bg-white opacity-100 mix-blend-multiply font-bold text-center text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl">
-        <Image src={logo} alt="Logo" />
-          </div> 
-      </BackgroundVideo>
     </div>
    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-      <h1>
-      <q> Transforma tu futuro con la última vanguardia en medicina regenerativa y longevidad. Ofrecemos una formación integral y avanzada para profesionales apasionados por innovar en el campo de la salud y el bienestar. Conviértete en un líder en el avance de tratamientos que potencian la calidad de vida y promueven una vida más larga y saludable.</q>
-      </h1>
+      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1] text-center">
+        <h1>
+        <q> Transforma tu futuro con la última vanguardia en medicina regenerativa y longevidad. Ofrecemos una formación integral y avanzada para profesionales apasionados por innovar en el campo de la salud y el bienestar. Conviértete en un líder en el avance de tratamientos que potencian la calidad de vida y promueven una vida más larga y saludable.</q>
+        </h1>
       </div>
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
+      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left ">
         <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+          href="/pages/diplomados"
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
           target="_blank"
           rel="noopener noreferrer"
