@@ -5,13 +5,13 @@ import Whastapp from './components/Whastapp.js';
 import Background from './components/Background.js'
 
 
-export default function App({  pageProps }) {  
+export default function App() {  
  
   return (
     <ThemeProvider>
       <Background>
-        <Whastapp {...pageProps}/>
-        <Header {...pageProps}/>
+        <Whastapp />
+        <Header />
       </Background>
     </ThemeProvider>
   );
