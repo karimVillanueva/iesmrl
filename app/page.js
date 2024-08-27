@@ -10,8 +10,8 @@ export default function App({ Component, pageProps }) {
   return (
     <ThemeProvider>
       <Background>
-        <Whastapp {...pageProps}/>
-        <Header {...pageProps}/>
+        <Whastapp />
+        <Header />
       </Background>
     </ThemeProvider>
   );
