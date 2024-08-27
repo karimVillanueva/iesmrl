@@ -6,8 +6,8 @@ const Background = ({ children }) => {
 
   return (
     <div
-      className={`min-h-screen transition-colors duration-300 ${
-        isDarkTheme ? 'bg-gray-800 text-white' : 'bg-gray-100 text-gray-900'
+      className={`min-h-screen transition-colors duration-300 p-4 ${
+        isDarkTheme ? 'bg-gray-800 text-white' : 'bg-gray-100 text-gray-900 p-4'
       }`}
     >
       {children} {/* Renderiza los hijos pasados al componente Background */}

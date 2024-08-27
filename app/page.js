@@ -2,7 +2,8 @@
 import { ThemeProvider } from './context/ThemeContext.js';
 import Header from './components/Header.js';
 import Whastapp from './components/Whastapp.js';
-import Background from './components/Background.js'
+import Background from './components/Background.js';
+import Hero from './components/Hero.js';
 
 
 export default function App() {  
@@ -12,6 +13,7 @@ export default function App() {
       <Background>
         <Whastapp />
         <Header />
+        <Hero/>
       </Background>
     </ThemeProvider>
   );
