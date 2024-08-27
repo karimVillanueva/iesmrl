@@ -5,7 +5,7 @@ import Whastapp from './components/Whastapp.js';
 import Background from './components/Background.js'
 
 
-export default function App({ Component, pageProps }) {  
+export default function App({ Component, pageProps: any }) {  
  
   return (
     <ThemeProvider>
