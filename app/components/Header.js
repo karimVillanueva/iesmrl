@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useTheme } from '../context/ThemeContext'; // Importa el hook personalizado del contexto
 import { ImSwitch } from 'react-icons/im'; // Importa el icono ImSwitch
-import {logo} from '../../public/logo_oscuro_no_bg.svg'
+
 
 const Header = () => {
   const { isDarkTheme, toggleTheme } = useTheme(); // Usa el contexto de tema para obtener el estado del tema y la función para alternarlo
@@ -32,7 +32,7 @@ const Header = () => {
           height="50"
           viewBox="0 0 50 50"
           fill="none"
-          xmlns={logo}
+          xmlns="http://www.w3.org/2000/svg"
         >
           <circle cx="25" cy="25" r="25" fill={isDarkTheme ? '#fff' : '#000'} />
           {/* Asegúrate de personalizar el logo SVG según tus necesidades */}
