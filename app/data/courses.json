@@ -1,0 +1,38 @@
+[
+    {
+      "id": 1,
+      "title": "Introducción a la Medicina Regenerativa",
+      "description": "Descubre los principios fundamentales de la medicina regenerativa.",
+      "image": "https://via.placeholder.com/150",
+      "tag":"Medicina Regenerativa"
+    },
+    {
+      "id": 2,
+      "title": "Longevidad y Estilo de Vida",
+      "description": "Aprende cómo mejorar tu salud y aumentar la longevidad.",
+      "image": "https://via.placeholder.com/150",
+      "tag":"Medicina Regenerativa"
+    },
+    {
+      "id": 3,
+      "title": "Avances en Terapias Celulares",
+      "description": "Explora las últimas investigaciones en terapias celulares.",
+      "image": "https://via.placeholder.com/150",
+      "tag":"Medicina Regenerativa"
+    },
+    {
+      "id": 4,
+      "title": "Biohacking y Bienestar",
+      "description": "Métodos para optimizar tu cuerpo y mente.",
+      "image": "https://via.placeholder.com/150",
+      "tag":"Medicina Regenerativa"
+    },
+    {
+      "id": 5,
+      "title": "Medicina regenerativa en adicciones",
+      "description": "Métodos para optimizar tu cuerpo y mente.",
+      "image": "https://via.placeholder.com/150",
+      "tag":"Adicciones"
+    }
+  ]
+  
