@@ -4,35 +4,84 @@
       "title": "Introducción a la Medicina Regenerativa",
       "description": "Descubre los principios fundamentales de la medicina regenerativa.",
       "image": "https://via.placeholder.com/150",
-      "tag":"Medicina Regenerativa"
+      "instructor":"Dasaev",
+      "tag":"Medicina Regenerativa",
+        "courseData" : {
+          "title": "Curso de Desarrollo Web",
+          "instructor": "John Doe",
+          "startDate": "1 de Octubre, 2024",
+          "duration": "8 semanas",
+          "schedule": "Lunes y Miércoles, 6:00 PM - 8:00 PM",
+          "topics": "1. Introducción \n 2.Drogas y amor"
+        }
     },
     {
       "id": 2,
       "title": "Longevidad y Estilo de Vida",
       "description": "Aprende cómo mejorar tu salud y aumentar la longevidad.",
       "image": "https://via.placeholder.com/150",
-      "tag":"Medicina Regenerativa"
+      "instructor":"Dasaev",
+      "start":"ago 24",
+      "tag":"Medicina Regenerativa",
+      "courseData" : {
+        "title": "Curso de Desarrollo Web",
+        "instructor": "John Doe",
+        "startDate": "1 de Octubre, 2024",
+        "duration": "8 semanas",
+        "schedule": "Lunes y Miércoles, 6:00 PM - 8:00 PM",
+        "topics": "1. Introducción \n 2.Drogas y amor"
+      }
     },
     {
       "id": 3,
       "title": "Avances en Terapias Celulares",
       "description": "Explora las últimas investigaciones en terapias celulares.",
       "image": "https://via.placeholder.com/150",
-      "tag":"Medicina Regenerativa"
+      "instructor":"Dasaev",
+      "start":"ago 24",
+      "tag":"Medicina Regenerativa",
+      "courseData" : {
+        "title": "Curso de Desarrollo Web",
+        "instructor": "John Doe",
+        "startDate": "1 de Octubre, 2024",
+        "duration": "8 semanas",
+        "schedule": "Lunes y Miércoles, 6:00 PM - 8:00 PM",
+        "topics": "1. Introducción \n 2.Drogas y amor"
+      }
     },
     {
       "id": 4,
       "title": "Biohacking y Bienestar",
       "description": "Métodos para optimizar tu cuerpo y mente.",
       "image": "https://via.placeholder.com/150",
-      "tag":"Medicina Regenerativa"
+      "instructor":"Dasaev",
+      "start":"ago 24",
+      "tag":"Medicina Regenerativa",
+      "courseData" : {
+        "title": "Curso de Desarrollo Web",
+        "instructor": "John Doe",
+        "startDate": "1 de Octubre, 2024",
+        "duration": "8 semanas",
+        "schedule": "Lunes y Miércoles, 6:00 PM - 8:00 PM",
+        "topics": "1. Introducción \n 2.Drogas y amor"
+      }
     },
     {
       "id": 5,
       "title": "Medicina regenerativa en adicciones",
       "description": "Métodos para optimizar tu cuerpo y mente.",
       "image": "https://via.placeholder.com/150",
-      "tag":"Adicciones"
+      "instructor":"Victor",
+      "start":"ago 24",
+      "tag":"Adicciones",
+      "courseData" : {
+        "title": "Curso de Desarrollo Web",
+        "instructor": "John Doe",
+        "startDate": "1 de Octubre, 2024",
+        "duration": "8 semanas",
+        "schedule": "Lunes y Miércoles, 6:00 PM - 8:00 PM",
+        "topics": "1. Introducción \n 2.Drogas y amor"
+      }
     }
   ]
   

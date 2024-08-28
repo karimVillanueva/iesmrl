@@ -4,8 +4,7 @@ import Header from './components/Header.js';
 import Whastapp from './components/Whastapp.js';
 import Background from './components/Background.js';
 import Hero from './components/Hero.js';
-import Carrousel from './components/Carrousel.js'
-
+import Carrousel from './components/Carrousel.js';
 
 export default function App() {  
  
