@@ -82,7 +82,7 @@ const Carousel = () => {
         <h1 className="text-2xl font-bold">Cursos Disponibles</h1>
       </div>
 
-      <div className=" flex justify-center overflow-hidden h-screen">
+      <div className=" flex overflow-hidden h-full">
         {courses.map((course, index) => (
           <div
             key={course.id}
