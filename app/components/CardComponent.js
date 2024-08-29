@@ -23,8 +23,8 @@ const CardComponent = ({course}) => {
             <span className={`rounded-full text-xs px-3 py-1 uppercase cursor-pointer ${isDarkTheme ? 'bg-teal-600' : 'bg-teal-400 text-white'}`}>
               {course.tag}
             </span>
-            <h4 className="text-lg font-bold mt-4">{course.title}</h4>
-            <p className="text-sm mt-2 mb-8">
+            <h4 className="text-lg font-bold mt-4 line-clamp-2">{course.title}</h4>
+            <p className="text-sm mt-2 mb-8 line-clamp-3">
               {course.description}
             </p>
             <div className="flex items-center mt-auto">

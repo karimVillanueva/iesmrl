@@ -21,7 +21,7 @@ const Carousel = () => {
     if (!isStatic) {
       const interval = setInterval(() => {
         setSelectedIndex((prevIndex) => (prevIndex + 1) % courses.length);
-      }, 3000); // Cambiar cada 3 segundos
+      }, 2000); // Cambiar cada 3 segundos
 
       return () => clearInterval(interval);
     }
@@ -94,6 +94,7 @@ const Carousel = () => {
               opacity: selectedIndex === index ? 1 : 0.5,
               transition: 'transform 0.5s, opacity 0.5s',
             }}
+           
             onClick={() => {
               handleSelectCard(index);
               setIsPopupVisible(true);

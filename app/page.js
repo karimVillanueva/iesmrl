@@ -5,6 +5,7 @@ import Whastapp from './components/Whastapp.js';
 import Background from './components/Background.js';
 import Hero from './components/Hero.js';
 import Carrousel from './components/Carrousel.js';
+import TeacherSection from './components/TeacherSection.js'
 
 export default function App() {  
  
@@ -15,6 +16,7 @@ export default function App() {
         <Header />
         <Hero/>
         <Carrousel/>
+        <TeacherSection/>
       </Background>
     </ThemeProvider>
   );
