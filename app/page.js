@@ -18,8 +18,8 @@ export default function App() {
         <Hero/>
         <Carrousel/>
         <TeacherSection/>
-      </Background>
-      <NewsLetters/>
+        <NewsLetters/>
+      </Background>    
     </ThemeProvider>
   );
 }
