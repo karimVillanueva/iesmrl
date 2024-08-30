@@ -1,3 +1,4 @@
+'use client'
 import React from 'react';
 import { useTheme } from '../context/ThemeContext'; // Importa el hook de tema
 import Image from 'next/image';

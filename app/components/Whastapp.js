@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 import { FaWhatsapp } from 'react-icons/fa6'; // Importa el icono de WhatsApp
 import { useTheme } from '../context/ThemeContext'; // Importa el hook personalizado del contexto

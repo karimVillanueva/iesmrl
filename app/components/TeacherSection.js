@@ -1,3 +1,4 @@
+'use client';
 // components/TeachersSection.js
 import React from 'react';
 import { useTheme } from '../context/ThemeContext';

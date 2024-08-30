@@ -1,8 +1,11 @@
-import React from 'react';
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick';
+import { useTheme } from '../context/ThemeContext';
+import dynamic from 'next/dynamic';
 
-import { useTheme } from '../context/ThemeContext'; // Importar el hook personalizado para usar el contexto
+// Importar dinámicamente react-slick solo en el cliente
+const Slider = dynamic(() => import('react-slick'), { ssr: false });
+import 'slick-carousel/slick/slick.css'; 
+import 'slick-carousel/slick/slick-theme.css';
+
 
 // Array de eventos de ejemplo
 const events = [
@@ -23,7 +26,7 @@ const events = [
   },
 ];
 
-const Newsletter = () => {
+export default function Newsletter() {
   // Usar el hook personalizado para obtener el estado del tema
   const { isDarkTheme } = useTheme();
 
@@ -37,6 +40,7 @@ const Newsletter = () => {
     autoplay: true,
     autoplaySpeed: 3000,
   };
+
 
   return (
     <div className={` p-4 transition-colors duration-300 ${isDarkTheme ? 'bg-gray-900 text-white' : 'bg-white text-gray-900'}`}>
@@ -56,4 +60,3 @@ const Newsletter = () => {
   );
 };
 
-export default Newsletter;

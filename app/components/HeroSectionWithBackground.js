@@ -1,3 +1,4 @@
+'use client';
 import Image from 'next/image';
 import Link from 'next/link';
 import dna from '/public/dna.jpg'; // Asegúrate de que la ruta a la imagen sea correcta

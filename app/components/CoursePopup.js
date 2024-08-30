@@ -1,22 +1,23 @@
-// components/CoursePopup.js
+'use client';
+
 import React from 'react';
 import { useTheme } from '../context/ThemeContext';
 
 const CoursePopup = ({ course, isVisible, onClose }) => {
-  const { isDarkTheme } = useTheme();
+  const { isDarkTheme } = useTheme(); // Obtener el estado del tema desde el contexto
 
   if (!isVisible) return null; // No renderizar si el popup no es visible
 
   return (
     <div
-      className={` inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50 ${isDarkTheme === false ? 'bg-gray-900 text-white' : 'bg-white text-black'}`}
+      className={`fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50 ${isDarkTheme ? 'bg-gray-900 text-white' : 'bg-white text-black'}`}
       onClick={onClose}
     >
       <div
-        className={`relative bg-white dark:bg-gray-800 p-8 rounded-lg w-full max-w-xl mx-4 ${isDarkTheme === false ? 'bg-gray-800 text-white' : 'bg-white text-black'}`}
-        onClick={(e) => e.stopPropagation()}
+        className={`relative p-8 rounded-lg w-full max-w-xl mx-4 shadow-lg ${isDarkTheme ? 'bg-gray-800 text-white' : 'bg-white text-black'}`}
+        onClick={(e) => e.stopPropagation()} // Evitar el cierre del popup al hacer clic dentro del mismo
       >
-        <h2 className={`text-2xl font-bold mb-4 ${isDarkTheme === false ? ' text-white' : ' text-black'}`}>{course.title}</h2>
+        <h2 className={`text-2xl font-bold mb-4 ${isDarkTheme ? 'text-white' : 'text-black'}`}>{course.title}</h2>
         <p className="mb-2"><strong>Instructor:</strong> {course.instructor}</p>
         <p className="mb-2"><strong>Fecha de inicio:</strong> {course.startDate}</p>
         <p className="mb-2"><strong>Duración:</strong> {course.duration}</p>
