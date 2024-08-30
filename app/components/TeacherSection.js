@@ -12,7 +12,7 @@ import dictador from './images/dictador.jpg';
 const teachers = [
   { 
     id: 1, 
-    name: 'Juan Pérez', 
+    name: 'chapo', 
     subject: 'Matemáticas',
     profileImage: {chapo},  // Asegúrate de tener esta imagen en tu carpeta de imágenes
     bio: 'Apasionado por los números y la educación, con más de 10 años de experiencia enseñando álgebra y geometría.',
@@ -21,7 +21,7 @@ const teachers = [
   },
   { 
     id: 2, 
-    name: 'María García', 
+    name: 'tony', 
     subject: 'Ciencias',
     profileImage: {tony},
     bio: 'Especialista en biología y química, comprometida con el aprendizaje práctico y la investigación científica.',
@@ -30,7 +30,7 @@ const teachers = [
   },
   { 
     id: 3, 
-    name: 'Carlos Rodríguez', 
+    name: 'hitle', 
     subject: 'Historia',
     profileImage: {hitler},
     bio: 'Amante de la historia y la arqueología, con un enfoque en la historia antigua y la civilización romana.',
@@ -39,7 +39,7 @@ const teachers = [
   },
   { 
     id: 4, 
-    name: 'Ana Martínez', 
+    name: 'dictador', 
     subject: 'Lengua',
     profileImage: {dictador},
     bio: 'Dedicada a la literatura y la lingüística, con un interés especial en la enseñanza del español como lengua extranjera.',
@@ -54,6 +54,9 @@ const TeachersSection = () => {
 
   return (
     <div className={`min-h-screen p-6 ${isDarkTheme ? 'bg-gray-900 text-white' : 'bg-white text-gray-900'}`}>
+    <div className="flex justify-center items-center mb-0 p-6">
+        <h1 className="text-2xl font-bold">Nuestros docentes</h1>
+      </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {teachers.map((teacher) => (
           <div
@@ -63,7 +66,7 @@ const TeachersSection = () => {
             }`}
           >
             <Image
-              src={teacher.profileImage}
+              src={chapo}
               alt={teacher.name}
               className="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
               height={500}

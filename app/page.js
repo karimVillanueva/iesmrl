@@ -6,6 +6,7 @@ import Background from './components/Background.js';
 import Hero from './components/Hero.js';
 import Carrousel from './components/Carrousel.js';
 import TeacherSection from './components/TeacherSection.js'
+import NewsLetters from './components/NewsLetters.js'
 
 export default function App() {  
  
@@ -18,6 +19,7 @@ export default function App() {
         <Carrousel/>
         <TeacherSection/>
       </Background>
+      <NewsLetters/>
     </ThemeProvider>
   );
 }
