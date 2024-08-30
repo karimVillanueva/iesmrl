@@ -69,7 +69,7 @@ const TeachersSection = () => {
             <Image
               src={chapo}
               alt={teacher.name}
-              className="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
+              className="w-24 h-24 rounded-full mx-auto mb-4 "
               height={500}
               width={500}
             />

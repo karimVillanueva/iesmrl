@@ -1,16 +1,21 @@
-'use client'
+'use client';
+
 import React from 'react';
 import { useTheme } from '../context/ThemeContext'; // Importa el hook de tema
 import Image from 'next/image';
-import imagen from '../../public/dna-blue.jpg'
+import imagen from '../../public/dna-blue.jpg';
 
-const CardComponent = ({course}) => {
+const CardComponent = ({ course }) => {
   const { isDarkTheme } = useTheme(); // Obtén la variable isDarkTheme del contexto
 
   return (
-    <div  id="card" key={course} className={`absolute  flex justify-center items-center p-4 ${isDarkTheme ? 'bg-gray-900' : 'bg-gray-100'}`}>
-      <div className="flex flex-wrap justify-evenly w-full max-w-4xl">
-        <div className={`overflow-hidden w-72 m-2 rounded-lg shadow-lg ${isDarkTheme ? 'bg-gray-800 text-white' : 'bg-white text-gray-900'}`}>
+    <div 
+      id="card" 
+      key={course.id} 
+      className={`flex justify-center items-center p-4 w-full h-full ${isDarkTheme ? 'bg-gray-900' : 'bg-gray-100'}`} // Eliminado 'absolute' y agregado 'w-full h-full'
+    >
+      <div className="flex flex-wrap justify-evenly w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg">
+        <div className={`overflow-hidden m-2 rounded-lg shadow-lg ${isDarkTheme ? 'bg-gray-800 text-white' : 'bg-white text-gray-900'}`}>
           <div className="h-48 w-full">
             <Image
               src={imagen}
