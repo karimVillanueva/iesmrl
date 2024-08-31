@@ -1,25 +1,66 @@
 'use client';
 import React from 'react';
-import { FaWhatsapp } from 'react-icons/fa6'; // Importa el icono de WhatsApp
+import { FaWhatsapp, FaYoutube, FaInstagram, FaFacebook } from 'react-icons/fa'; // Importa los iconos
 import { useTheme } from '../context/ThemeContext'; // Importa el hook personalizado del contexto
 
-function Whatsapp() {
+function SocialLinks() {
   const { isDarkTheme } = useTheme(); // Usa el contexto de tema para obtener el estado del tema
 
   return (
-    <a
-      href="https://wa.me/+525562109769" // Reemplaza con tu número
-      target="_blank"
-      rel="noopener noreferrer"
-      className="fixed bottom-4 right-4 z-50 transition-transform duration-300 transform hover:scale-110"
-    >
-      {/* Cambia el color del icono dependiendo del tema */}
-      <FaWhatsapp
-        color={isDarkTheme ? 'white' : 'black'}
-        className='w-7 h-7 md:w-10 md:h-10'
-      />
-    </a>
+    <div className="fixed bottom-4 right-4 z-50 flex flex-col items-center space-y-4 md:space-y-6 transition-transform duration-300">
+      {/* Enlace a WhatsApp */}
+      <a
+        href="https://wa.me/+525562109769" // Reemplaza con tu número de WhatsApp
+        target="_blank"
+        rel="noopener noreferrer"
+        className="transition-transform duration-300 transform hover:scale-110"
+      >
+        <FaWhatsapp
+          size={28}
+          className={`w-7 h-7 md:w-10 md:h-10 ${isDarkTheme ? 'text-white' : 'text-black'}`} // Estilo basado en el tema
+        />
+      </a>
+      
+      {/* Enlace a YouTube */}
+      <a
+        href="https://www.youtube.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="transition-transform duration-300 transform hover:scale-110"
+      >
+        <FaYoutube
+          size={28}
+          className={`w-7 h-7 md:w-10 md:h-10 ${isDarkTheme ? 'text-white' : 'text-red-600'}`} // Estilo basado en el tema
+        />
+      </a>
+
+      {/* Enlace a Instagram */}
+      <a
+        href="https://www.instagram.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="transition-transform duration-300 transform hover:scale-110"
+      >
+        <FaInstagram
+          size={28}
+          className={`w-7 h-7 md:w-10 md:h-10 ${isDarkTheme ? 'text-white' : 'text-pink-500'}`} // Estilo basado en el tema
+        />
+      </a>
+
+      {/* Enlace a Facebook */}
+      <a
+        href="https://www.facebook.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="transition-transform duration-300 transform hover:scale-110"
+      >
+        <FaFacebook
+          size={28}
+          className={`w-7 h-7 md:w-10 md:h-10 ${isDarkTheme ? 'text-white' : 'text-blue-600'}`} // Estilo basado en el tema
+        />
+      </a>
+    </div>
   );
 }
 
-export default Whatsapp;
+export default SocialLinks;

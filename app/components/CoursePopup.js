@@ -23,7 +23,7 @@ const CoursePopup = ({ course, isVisible, onClose }) => {
         <p className="mb-2"><strong>Fecha de inicio:</strong> {course.startDate}</p>
         <p className="mb-2"><strong>Duración:</strong> {course.duration}</p>
         <p className="mb-4"><strong>Horario de clases:</strong> {course.schedule}</p>
-        <Link className='text-blue-400' href={course.syllabus} target="_blank">Temario</Link>
+        <Link className='text-blue-400' href="https://drive.google.com/file/d/1AT9cP-2MOe9hBAjxRUtKepVJ_JIT-n0_/view?usp=drive_linkhttps://drive.usercontent.google.com/u/0/uc?id=1AT9cP-2MOe9hBAjxRUtKepVJ_JIT-n0_&export=download" target="_blank" rel="noopener noreferrer">Temario</Link>
         
         <button
           onClick={onClose}

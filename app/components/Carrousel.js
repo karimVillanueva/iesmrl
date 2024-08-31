@@ -21,7 +21,7 @@ const CustomCarousel = () => {
     additionalTransfrom: 0,
     arrows: true,
     autoPlay: !isPopupVisible, // Cambia a false si el popup está visible
-    autoPlaySpeed: 3000,
+    autoPlaySpeed: 2500,
     centerMode: false,
     className: "",
     containerClass: "container mx-auto", // Añadimos responsive centrado
@@ -75,7 +75,7 @@ const CustomCarousel = () => {
   };
 
   return (
-    <div id="carousel" className={`h-screen p-4 ${bgClass}`}>
+    <div id="carrousel" className={`h-screen p-4 ${bgClass}`}>
       <div className="flex justify-center items-center mb-4">
         <h1 className="text-2xl font-bold">Cursos Disponibles</h1>
       </div>
