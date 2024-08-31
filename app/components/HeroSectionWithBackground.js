@@ -5,7 +5,7 @@ import dna from '/public/dna.jpg'; // Asegúrate de que la ruta a la imagen sea 
 
 const HeroSectionWithBackground = () => {
   return (
-    <section className="relative w-full h-[500px] md:h-[700px] lg:h-[800px] bg-cover bg-center rounded" style={{ backgroundImage: `url(${dna.src})` }}>
+    <section id="start" className="relative w-full h-[500px] md:h-[700px] lg:h-[800px] bg-cover bg-center rounded" style={{ backgroundImage: `url(${dna.src})` }}>
       {/* Imagen para SEO y accesibilidad */}
       <Image
         src={dna}

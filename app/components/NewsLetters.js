@@ -1,5 +1,6 @@
 import { useTheme } from '../context/ThemeContext';
 import dynamic from 'next/dynamic';
+import Link from 'next/link';
 
 // Importar dinámicamente react-slick solo en el cliente
 const Slider = dynamic(() => import('react-slick'), { ssr: false });
@@ -43,7 +44,7 @@ export default function Newsletter() {
 
 
   return (
-    <div className={` p-4 transition-colors duration-300 ${isDarkTheme ? 'bg-gray-900 text-white' : 'bg-white text-gray-900'}`}>
+    <div id="newsletters" className={`h-screen p-4 transition-colors duration-300 ${isDarkTheme ? 'bg-gray-900 text-white' : 'bg-white text-gray-900'}`}>
       <h2 className="text-3xl font-bold mb-6 text-center">Eventos Principales de la Escuela de Medicina</h2>
       <Slider {...settings}>
         {events.map((event, index) => (
@@ -56,6 +57,14 @@ export default function Newsletter() {
           </div>
         ))}
       </Slider>
+      <div className={`flex justify-between items-center p-4 ${isDarkTheme ? 'bg-gray-800 text-white' : 'bg-white text-black'}`}>
+         {/* Botón de post anterior */}
+         <Link href="#header" className={`flex flex-col items-start transition-colors duration-300 ${isDarkTheme ? 'hover:text-gray-400' : 'hover:text-gray-600'}`}>
+        <span className="text-sm uppercase text-gray-500">Arriba</span>
+        <span className="font-bold">Inicio</span>
+      </Link>
+      </div>
+       
     </div>
   );
 };

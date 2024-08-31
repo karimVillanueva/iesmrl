@@ -1,6 +1,7 @@
 'use client';
 // components/TeachersSection.js
 import React from 'react';
+import Link from 'next/link';
 import { useTheme } from '../context/ThemeContext';
 import { FaLinkedin } from 'react-icons/fa'; // Importar el ícono de LinkedIn
 import Image from 'next/image';
@@ -54,7 +55,7 @@ const TeachersSection = () => {
   console.log(chapo)
 
   return (
-    <div className={`min-h-screen p-6 ${isDarkTheme ? 'bg-gray-900 text-white' : 'bg-white text-gray-900'}`}>
+    <div id="teachers" className={` min-h-screen p-6 ${isDarkTheme ? 'bg-gray-900 text-white' : 'bg-white text-gray-900'}`}>
     <div className="flex justify-center items-center mb-0 p-6">
         <h1 className="text-2xl font-bold">Nuestros docentes</h1>
       </div>
@@ -90,6 +91,27 @@ const TeachersSection = () => {
           </div>
         ))}
       </div>
+
+
+      <div className={`flex justify-between items-center p-4 ${isDarkTheme ? 'bg-gray-800 text-white' : 'bg-white text-black'}`}>
+      {/* Botón de post anterior */}
+      <Link href="#carrousel" className={`flex flex-col items-start transition-colors duration-300 ${isDarkTheme ? 'hover:text-gray-400' : 'hover:text-gray-600'}`}>
+        <span className="text-sm uppercase text-gray-500">Anterior</span>
+        <span className="font-bold">Nuestros docentes</span>
+      </Link>
+
+      {/* Botón de siguiente post */}
+      <Link href="#newsletters" className={`flex flex-col items-end transition-colors duration-300 ${isDarkTheme ? 'hover:text-gray-400' : 'hover:text-gray-600'}`}>
+        <span className="text-sm uppercase text-gray-500">Siguiente</span>
+        <span className="font-bold">Noticias</span>
+      </Link>
+    </div>
+
+
+
+
+
+
     </div>
   );
 };

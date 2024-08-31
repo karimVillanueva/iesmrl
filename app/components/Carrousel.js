@@ -7,6 +7,7 @@ import 'react-multi-carousel/lib/styles.css';
 import courses from '../data/courses.json'; 
 import CardComponent from './CardComponent';
 import CoursePopup from './CoursePopup';
+import Link from 'next/link';
 
 const CustomCarousel = () => {
   const { isDarkTheme } = useTheme();
@@ -101,6 +102,24 @@ const CustomCarousel = () => {
           </div>
         ))}
       </Carousel>
+
+
+      <div className={`flex justify-between items-center p-4 ${isDarkTheme ? 'bg-gray-800 text-white' : 'bg-white text-black'}`}>
+      {/* Botón de post anterior */}
+      <Link href="#header" className={`flex flex-col items-start transition-colors duration-300 ${isDarkTheme ? 'hover:text-gray-400' : 'hover:text-gray-600'}`}>
+        <span className="text-sm uppercase text-gray-500">Anterior</span>
+        <span className="font-bold">Inicio</span>
+      </Link>
+
+      {/* Botón de siguiente post */}
+      <Link href="#teachers" className={`flex flex-col items-end transition-colors duration-300 ${isDarkTheme ? 'hover:text-gray-400' : 'hover:text-gray-600'}`}>
+        <span className="text-sm uppercase text-gray-500">Siguiente</span>
+        <span className="font-bold">Nuestros docentes</span>
+      </Link>
+    </div>
+
+
+
     </div>
   );
 };
