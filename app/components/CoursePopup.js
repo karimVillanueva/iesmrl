@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { useTheme } from '../context/ThemeContext';
+import Link from 'next/link';
 
 const CoursePopup = ({ course, isVisible, onClose }) => {
   const { isDarkTheme } = useTheme(); // Obtener el estado del tema desde el contexto
@@ -22,6 +23,7 @@ const CoursePopup = ({ course, isVisible, onClose }) => {
         <p className="mb-2"><strong>Fecha de inicio:</strong> {course.startDate}</p>
         <p className="mb-2"><strong>Duración:</strong> {course.duration}</p>
         <p className="mb-4"><strong>Horario de clases:</strong> {course.schedule}</p>
+        <Link className='text-blue-400' href={course.syllabus} target="_blank">Temario</Link>
         
         <button
           onClick={onClose}
