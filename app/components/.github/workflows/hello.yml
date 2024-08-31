@@ -1,0 +1,14 @@
+name: hello word
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  job_name_hello:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: print a message
+        run: |
+          echo "hello word from github actions"
