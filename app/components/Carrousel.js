@@ -20,16 +20,16 @@ const CustomCarousel = () => {
   const settings = {
     additionalTransfrom: 0,
     arrows: true,
-    autoPlay: true,
+    autoPlay: !isPopupVisible, // Cambia a false si el popup está visible
     autoPlaySpeed: 3000,
     centerMode: false,
     className: "",
-    containerClass: "container",
+    containerClass: "container mx-auto", // Añadimos responsive centrado
     dotListClass: "",
     draggable: true,
     focusOnSelect: false,
     infinite: true,
-    itemClass: "",
+    itemClass: "px-2", // Espaciado entre items
     keyBoardControl: true,
     minimumTouchDrag: 80,
     renderButtonGroupOutside: false,
@@ -69,6 +69,11 @@ const CustomCarousel = () => {
     setIsPopupVisible(true);
   };
 
+  // Función para cerrar el popup y reanudar el carrusel
+  const handleClosePopup = () => {
+    setIsPopupVisible(false);
+  };
+
   return (
     <div id="carousel" className={`h-screen p-4 ${bgClass}`}>
       <div className="flex justify-center items-center mb-4">
@@ -86,11 +91,11 @@ const CustomCarousel = () => {
               <CardComponent course={course} />
             </div>
 
-            {selectedIndex === index && (
+            {selectedIndex === index && isPopupVisible && (
               <CoursePopup
                 course={course.courseData}
                 isVisible={isPopupVisible}
-                onClose={() => setIsPopupVisible(false)}
+                onClose={handleClosePopup}
               />
             )}
           </div>
