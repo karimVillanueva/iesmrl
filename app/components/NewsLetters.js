@@ -49,8 +49,8 @@ export default function Newsletter() {
           <h2 className="text-3xl font-bold mb-6 text-center">Eventos Principales de la Escuela de Medicina</h2>
           <Slider {...settings}>
             {events.map((event, index) => (
-              <div key={index} className="p-4">
-                <div className={`border ${isDarkTheme ? 'border-gray-700' : 'border-gray-200'} rounded-lg p-6 shadow-lg hover:shadow-2xl transition-shadow duration-300`}>
+              <div key={index} className={`p-4 ${isDarkTheme ? 'bg-gray-700' : 'bg-[#eeebd4]'}`}>
+                <div className={`border ${isDarkTheme ? 'border-gray-700' : 'border-[#bca61c]'} rounded-lg p-6 shadow-lg hover:shadow-2xl transition-shadow duration-300`}>
                   <h3 className="text-2xl font-semibold mb-2">{event.title}</h3>
                   <p className="text-sm mb-4 text-gray-400">{event.date}</p>
                   <p className="text-lg leading-relaxed">{event.description}</p>

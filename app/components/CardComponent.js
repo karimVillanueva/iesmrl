@@ -12,7 +12,7 @@ const CardComponent = ({ course }) => {
     <div 
       id="card" 
       key={course.id} 
-      className={`flex justify-center items-center p-4 w-full h-full ${isDarkTheme ? 'bg-gray-900' : 'bg-gray-100'}`}
+      className={`flex justify-center items-center p-4 w-full h-full ${isDarkTheme ? 'bg-gray-900' : 'bg-[#eeebd4]'}`}
     >
       <div className="flex justify-center w-full"> {/* Contenedor centralizado */}
         <div className={`w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg overflow-hidden m-2 rounded-lg shadow-lg ${isDarkTheme ? 'bg-gray-800 text-white' : 'bg-white text-gray-900'}`}>

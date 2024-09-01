@@ -82,7 +82,7 @@ const TeachersSection = () => {
   const { isDarkTheme } = useTheme();
 
   return (
-    <div id="teachers" className={`min-h-screen p-6 ${isDarkTheme ? 'bg-gray-900 text-white' : 'bg-white text-gray-900'}`}>
+    <div id="teachers" className={`min-h-screen p-6 ${isDarkTheme ? 'bg-gray-900 text-white' : 'bg-[#eeebd4] text-gray-900'}`}>
       <div className="flex justify-center items-center mb-8 p-6">
         <h1 className="text-2xl font-bold">Nuestros docentes</h1>
       </div>
