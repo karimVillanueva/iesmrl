@@ -30,7 +30,7 @@ const Header = () => {
   console.log('header ' + isDarkTheme)
 
   return (
-    <header id="header" className={`flex items-center justify-between p-4 transition-colors duration-300 ${isDarkTheme ? 'bg-gray-800 text-white' : 'bg-gray-100 text-gray-900'}`}>
+    <header id="header" className={`h-min-screen flex items-center justify-between p-4 transition-colors duration-300 ${isDarkTheme ? 'bg-gray-800 text-white' : 'bg-gray-100 text-gray-900'}`}>
       {/* Logo en formato SVG */}
       <div className="flex items-center">
       <Image
