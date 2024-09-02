@@ -80,18 +80,18 @@ const teachers = [
 
 const TeachersSection = () => {
   const { isDarkTheme } = useTheme();
-
+  console.log('teachers ' + isDarkTheme)
   return (
-    <div id="teachers" className={`min-h-screen p-6 ${isDarkTheme ? 'bg-gray-900 text-white' : 'bg-[#eeebd4] text-gray-900'}`}>
-      <div className="flex justify-center items-center mb-8 p-6">
+    <div id="teachers" className={`min-h-screen p-6 ${isDarkTheme ? 'bg-gray-900 text-white' : 'bg-[#eeebd4] text-gray-900'}`}>hi 
+      <div className={`flex justify-center items-center mb-8 p-6 ${isDarkTheme ? 'bg-gray-900 text-white' : 'bg-[#eeebd4] text-gray-900'}`}>
         <h1 className="text-2xl font-bold">Nuestros docentes</h1>
       </div>
 
       <Slider {...settings}>
         {teachers.map((teacher) => (
-          <div key={teacher.id} className="p-4">
+          <div key={teacher.id} className="p-4"> hey g
             <div className={`rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl ${
-              isDarkTheme ? 'bg-gray-800' : 'bg-white'
+              isDarkTheme ? 'bg-gray-800 text-white' : 'bg-white text-gray-900'
             }`}>
               <Image
                 src={teacher.profileImage}

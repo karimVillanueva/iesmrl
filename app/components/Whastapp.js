@@ -17,7 +17,7 @@ function SocialLinks() {
       >
         <FaWhatsapp
           size={28}
-          className={`w-7 h-7 md:w-10 md:h-10 ${isDarkTheme ? 'text-white' : 'text-black'}`} // Estilo basado en el tema
+          className={`w-7 h-7 md:w-10 md:h-10 ${isDarkTheme ? 'text-white' : 'text-green-500'}`} // Estilo basado en el tema
         />
       </a>
       

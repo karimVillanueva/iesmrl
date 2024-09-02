@@ -4,7 +4,7 @@ import { useTheme } from '../context/ThemeContext'; // Importa el hook personali
 
 const Background = ({ children }) => {
   const { isDarkTheme } = useTheme(); // Usa el contexto de tema para obtener el estado del tema actual
-
+ 
   return (
     <div
       className={`min-h-screen transition-colors duration-300 p-4 ${
