@@ -41,7 +41,7 @@ export default function Newsletter() {
     autoplay: true,
     autoplaySpeed: 3000,
   };
-  console.log('newsletters ' +isDarkTheme)
+
   return (
     <div className={`flex flex-col min-h-screen ${isDarkTheme ? 'bg-gray-900 text-white' : 'bg-[#eeebd4] text-gray-900'}`}>
       <div className="flex-grow flex items-center justify-center">
