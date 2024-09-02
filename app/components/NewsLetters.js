@@ -29,7 +29,7 @@ const events = [
 
 export default function Newsletter() {
   // Usar el hook personalizado para obtener el estado del tema
-  const { isDarkTheme } = useTheme();
+  const { isDarkTheme, toggleTheme } = useTheme();
 
   // Configuración del carrusel
   const settings = {
