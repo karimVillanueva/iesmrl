@@ -44,8 +44,8 @@ export default function Newsletter() {
 
   return (
     <div className={`flex flex-col min-h-screen ${isDarkTheme ? 'bg-gray-900 text-white' : 'bg-white text-gray-900'}`}>
-      <div className="flex-grow">
-        <div id="newsletters" className="p-4">
+      <div className="flex-grow flex items-center justify-center">
+        <div id="newsletters" className="w-full max-w-3xl px-4">
           <h2 className="text-3xl font-bold mb-6 text-center">Eventos Principales de la Escuela de Medicina</h2>
           <Slider {...settings}>
             {events.map((event, index) => (
