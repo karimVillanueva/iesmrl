@@ -27,8 +27,6 @@ const Header = () => {
   // Texto del título en función del tamaño de la pantalla
   const titleText = isMobileView ? 'IESMERL' : 'Instituto de Estudios Superiores en Medicina Regenerativa y Longevidad'; // Usa texto largo o iniciales dependiendo del tamaño de la pantalla
 
-  console.log('header ' + isDarkTheme)
-
   return (
     <header id="header" className={`h-min-screen flex items-center justify-between p-4 transition-colors duration-300 ${isDarkTheme ? 'bg-gray-800 text-white' : 'bg-gray-100 text-gray-900'}`}>
       {/* Logo en formato SVG */}
