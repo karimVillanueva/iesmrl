@@ -17,7 +17,7 @@ function SocialLinks() {
       >
         <FaWhatsapp
           size={28}
-          className={`w-7 h-7 md:w-10 md:h-10 ${isDarkTheme ? 'text-white' : 'text-green-500'}`} // Estilo basado en el tema
+          className={`w-7 h-7 md:w-10 md:h-10 ${isDarkTheme ? 'text-green-500' : 'text-green-500'}`} // Estilo basado en el tema
         />
       </a>
       
@@ -30,7 +30,7 @@ function SocialLinks() {
       >
         <FaYoutube
           size={28}
-          className={`w-7 h-7 md:w-10 md:h-10 ${isDarkTheme ? 'text-white' : 'text-red-600'}`} // Estilo basado en el tema
+          className={`w-7 h-7 md:w-10 md:h-10 ${isDarkTheme ? 'text-red-600' : 'text-red-600'}`} // Estilo basado en el tema
         />
       </a>
 
@@ -43,7 +43,7 @@ function SocialLinks() {
       >
         <FaInstagram
           size={28}
-          className={`w-7 h-7 md:w-10 md:h-10 ${isDarkTheme ? 'text-white' : 'text-pink-500'}`} // Estilo basado en el tema
+          className={`w-7 h-7 md:w-10 md:h-10 ${isDarkTheme ? 'text-pink-500' : 'text-pink-500'}`} // Estilo basado en el tema
         />
       </a>
 
@@ -56,7 +56,7 @@ function SocialLinks() {
       >
         <FaFacebook
           size={28}
-          className={`w-7 h-7 md:w-10 md:h-10 ${isDarkTheme ? 'text-white' : 'text-blue-600'}`} // Estilo basado en el tema
+          className={`w-7 h-7 md:w-10 md:h-10 ${isDarkTheme ? 'text-blue-600' : 'text-blue-600'}`} // Estilo basado en el tema
         />
       </a>
     </div>
