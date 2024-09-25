@@ -10,7 +10,7 @@ function SocialLinks() {
     <div className="fixed bottom-4 right-4 z-50 flex flex-col items-center space-y-4 md:space-y-6 transition-transform duration-300">
       {/* Enlace a WhatsApp */}
       <a
-        href="https://wa.me/+525562109769" // Reemplaza con tu número de WhatsApp
+        href="https://wa.me/+525562109769?text=Hola,%20deseo%20más%20información%20sobre%20el%20próximo%20diplomado" // Reemplaza con tu número de WhatsApp
         target="_blank"
         rel="noopener noreferrer"
         className="transition-transform duration-300 transform hover:scale-110"
@@ -23,7 +23,7 @@ function SocialLinks() {
       
       {/* Enlace a YouTube */}
       <a
-        href="https://www.youtube.com"
+        href="https://www.youtube.com/@dr.odiseo/videos"
         target="_blank"
         rel="noopener noreferrer"
         className="transition-transform duration-300 transform hover:scale-110"
@@ -36,7 +36,7 @@ function SocialLinks() {
 
       {/* Enlace a Instagram */}
       <a
-        href="https://www.instagram.com"
+        href="https://www.instagram.com/iesmerl?igsh=MWFtZDY4bnZyM2c1dw=="
         target="_blank"
         rel="noopener noreferrer"
         className="transition-transform duration-300 transform hover:scale-110"
@@ -49,7 +49,7 @@ function SocialLinks() {
 
       {/* Enlace a Facebook */}
       <a
-        href="https://www.facebook.com"
+        href="https://www.facebook.com/share/KhtiNPg58XpRa3C9/?mibextid=LQQJ4d"
         target="_blank"
         rel="noopener noreferrer"
         className="transition-transform duration-300 transform hover:scale-110"

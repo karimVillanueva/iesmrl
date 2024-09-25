@@ -3,7 +3,6 @@
 import React from 'react';
 import { useTheme } from '../context/ThemeContext'; // Importa el hook de tema
 import Image from 'next/image';
-import imagen from '../../public/dna-blue.jpg';
 
 const CardComponent = ({ course }) => {
   const { isDarkTheme } = useTheme(); // Obtén la variable isDarkTheme del contexto
@@ -19,7 +18,7 @@ const CardComponent = ({ course }) => {
           {/* Tarjeta con ancho fijo y responsive */}
           <div className="h-48 w-full">
             <Image
-              src={imagen}
+              src='https://drive.google.com/uc?export=download&id=10Q2Q94ZeGTrCoxp-KUMjguGQYmQdX1lp'
               alt="rover"
               className="w-full h-full object-cover"
               height={500}
@@ -31,7 +30,7 @@ const CardComponent = ({ course }) => {
               {course.tag}
             </span>
             <h4 className="text-lg font-bold mt-4 line-clamp-2">{course.title}</h4>
-            <p className="text-sm mt-2 mb-8 line-clamp-3">
+            <p className="text-sm mt-2 mb-8 line-clamp-6">
               {course.description}
             </p>
             <div className="flex items-center mt-auto">
