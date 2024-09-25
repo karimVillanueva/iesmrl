@@ -18,7 +18,7 @@ const CardComponent = ({ course }) => {
           {/* Tarjeta con ancho fijo y responsive */}
           <div className="h-48 w-full">
             <Image
-              src='https://drive.google.com/uc?export=download&id=10Q2Q94ZeGTrCoxp-KUMjguGQYmQdX1lp'
+              src={course.image}
               alt="rover"
               className="w-full h-full object-cover"
               height={500}
