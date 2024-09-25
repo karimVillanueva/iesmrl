@@ -117,9 +117,6 @@ const CustomCarousel = () => {
         <span className="font-bold">Nuestros docentes</span>
       </Link>
     </div>
-
-
-
     </div>
   );
 };

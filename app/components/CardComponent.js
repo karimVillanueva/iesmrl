@@ -19,7 +19,7 @@ const CardComponent = ({ course }) => {
           <div className="h-48 w-full">
             <Image
               src={course.image}
-              alt="rover"
+              alt="Course Image"
               className="w-full h-full object-cover"
               height={500}
               width={500}
@@ -35,7 +35,7 @@ const CardComponent = ({ course }) => {
             </p>
             <div className="flex items-center mt-auto">
               <Image
-                src={course.src}
+                src={course.courseData.profile}
                 alt="user"
                 className="rounded-full w-10 h-10 mr-3"
                 height={500}

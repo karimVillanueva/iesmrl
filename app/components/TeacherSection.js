@@ -6,12 +6,7 @@ import Link from 'next/link';
 import { useTheme } from '../context/ThemeContext';
 import { FaLinkedin } from 'react-icons/fa';
 import Image from 'next/image';
-import Slider from 'react-slick'; // Importamos el componente Slider de react-slick
-import chapo from './images/chapo.jpeg';
-import tony from './images/tony.webp';
-import hitler from './images/hitler.jpg';
-import dictador from './images/dictador.jpg';
-
+import Slider from 'react-slick'; 
 // Configuración del carrusel
 const settings = {
   dots: true,
@@ -42,38 +37,47 @@ const settings = {
 const teachers = [
   { 
     id: 1, 
-    name: 'chapo', 
-    subject: 'Matemáticas',
-    profileImage: chapo, 
-    bio: 'Apasionado por los números y la educación, con más de 10 años de experiencia enseñando álgebra y geometría.',
-    education: 'Universidad Nacional Autónoma de México',
+    name: 'Dr Roberto Dasaev Jasso Galván', 
+    subject: 'Maestro en Adicciones',
+    profileImage: 'https://drive.google.com/uc?export=download&id=10tXUFwm72yKIvE-LmL-bj32YBSq6uqM6', 
+    bio: 'Médico de profesional con maestría en tratamiento integral de addciones con 10 años de experiencia',
+    education: 'Intituto Politécnico Nacional',
     linkedin: 'https://www.linkedin.com/in/juan-perez'
   },
   { 
     id: 2, 
-    name: 'tony', 
-    subject: 'Ciencias',
-    profileImage: tony,
+    name: 'Dr. Víctor', 
+    subject: 'Maestro en Medicina Regenerativa',
+    profileImage: 'https://drive.google.com/uc?export=download&id=10tXUFwm72yKIvE-LmL-bj32YBSq6uqM6',
     bio: 'Especialista en biología y química, comprometida con el aprendizaje práctico y la investigación científica.',
-    education: 'Universidad de Barcelona',
+    education: 'Instituto Politécnico Nacional',
     linkedin: 'https://www.linkedin.com/in/maria-garcia'
   },
   { 
     id: 3, 
-    name: 'hitler', 
-    subject: 'Historia',
-    profileImage: hitler,
-    bio: 'Amante de la historia y la arqueología, con un enfoque en la historia antigua y la civilización romana.',
-    education: 'Universidad Complutense de Madrid',
+    name: 'Dra. Mara', 
+    subject: 'Doctora en Medicina Regenerativa',
+    profileImage: 'https://drive.google.com/uc?export=download&id=10uCAEg_eZskyndXw4nPXcbD2nOBdinBG',
+    bio: 'Doctora en Medicina Regenerativa, docente en el Instituto Politécnico Nacional.',
+    education: 'Universidad de Moscú',
     linkedin: 'https://www.linkedin.com/in/carlos-rodriguez'
   },
   { 
     id: 4, 
-    name: 'dictador', 
-    subject: 'Lengua',
-    profileImage: dictador,
-    bio: 'Dedicada a la literatura y la lingüística, con un interés especial en la enseñanza del español como lengua extranjera.',
-    education: 'Pontificia Universidad Católica de Chile',
+    name: 'Nutriólogo Cristóbal', 
+    subject: 'Maestro en Nutriología',
+    profileImage: 'https://drive.google.com/uc?export=download&id=10tXUFwm72yKIvE-LmL-bj32YBSq6uqM6',
+    bio: 'Maestro especializado en nutrición con enfoque en la medicina regenerativa.',
+    education: 'Universidad Nacional Autónoma de México',
+    linkedin: 'https://www.linkedin.com/in/ana-martinez'
+  },
+  { 
+    id: 5, 
+    name: 'Maestra Patricia', 
+    subject: 'Maestro en Psicología',
+    profileImage: 'https://drive.google.com/uc?export=download&id=10uCAEg_eZskyndXw4nPXcbD2nOBdinBG',
+    bio: 'Maestra especialista en adicciones, experiencia en grupos de AA.',
+    education: 'Universidad Nacional Autónoma de México',
     linkedin: 'https://www.linkedin.com/in/ana-martinez'
   },
 ];

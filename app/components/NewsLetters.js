@@ -2,6 +2,7 @@ import { useTheme } from '../context/ThemeContext';
 import dynamic from 'next/dynamic';
 import Link from 'next/link';
 import { FaRegCopyright } from 'react-icons/fa'; // Icono de copyright de react-icons
+import Nosotros from './Nosotros'
 
 // Importar dinámicamente react-slick solo en el cliente
 const Slider = dynamic(() => import('react-slick'), { ssr: false });
@@ -11,19 +12,24 @@ import 'slick-carousel/slick/slick-theme.css';
 // Array de eventos de ejemplo
 const events = [
   {
-    title: 'Conferencia de Neurociencia',
-    date: '2024-09-10',
-    description: 'Una conferencia sobre los últimos avances en neurociencia.',
+    title: 'Inicio del diplomado Diplomado en medicina regenerativa, estética regenerativa y longevidad',
+    date: '2 27 de septiembre del 2024 ',
+    description: 'Inicio de Diplomado.',
   },
   {
-    title: 'Simposio de Cardiología',
-    date: '2024-10-01',
-    description: 'Discusión sobre nuevos tratamientos en cardiología.',
+    title: 'Diplomado en tratamiento integral de la obesidad ',
+    date: 'Proximamente',
+    description: 'Diplomado sobre nuevos tratamientos en obesidad.',
   },
   {
-    title: 'Workshop de Anatomía',
-    date: '2024-11-15',
-    description: 'Taller práctico sobre anatomía humana.',
+    title: 'Diplomado en manejo integral de las adicciones',
+    date: 'Proximamente',
+    description: 'Manejo integral de adicciones.',
+  },
+  {
+    title: 'Taller rejuvenecimiento facial 3D con ácido hialuronico',
+    date: 'Proximamente',
+    description: 'Taller.',
   },
 ];
 
@@ -43,7 +49,8 @@ export default function Newsletter() {
   };
 
   return (
-    <div className={`flex flex-col min-h-screen ${isDarkTheme ? 'bg-gray-900 text-white' : 'bg-[#eeebd4] text-gray-900'}`}>
+    <div id="newsletters" className={`flex flex-col min-h-screen ${isDarkTheme ? 'bg-gray-900 text-white' : 'bg-[#eeebd4] text-gray-900'}`}>
+      <Nosotros/>
       <div className="flex-grow flex items-center justify-center">
         <div id="newsletters" className="w-full max-w-3xl px-4">
           <h2 className="text-3xl font-bold mb-6 text-center">
