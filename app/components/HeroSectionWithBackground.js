@@ -6,7 +6,7 @@ import dna from '/public/dna.jpg'; // Asegúrate de que la ruta a la imagen sea 
 
 const HeroSectionWithBackground = () => {
   const [displayedText, setDisplayedText] = useState('');
-  const fullText = "Únete a nuestra escuela líder en medicina regenerativa y longevidad.";
+  const fullText = "\u00DA nete a nuestra escuela líder en medicina regenerativa y longevidad.";
 
   useEffect(() => {
     let index = 0;
